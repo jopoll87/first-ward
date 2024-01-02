@@ -19,7 +19,7 @@ function App() {
   const handleProgram = () => {
     setProgram(!program);
     setGeneralInfo(false);
-    setActivities(false)
+    setActivities(false);
   };
   const handleUpcomingActivities = () => {
     setActivities(!activities);
@@ -34,7 +34,10 @@ function App() {
       </header>
       <main>
         <div className='main-buttons'>
-          <Button buttonName='General Info' handleClick={handleGeneralInfo} />
+          <Button
+            buttonName='General Info'
+            handleClick={handleGeneralInfo}
+          />
           <Button
             buttonName='Sacrament Meeting Program'
             handleClick={handleProgram}
@@ -45,15 +48,9 @@ function App() {
           />
         </div>
         <div>
-          {generalInfo && (
-            <GeneralInfo />
-          )}
-          {program && (
-            <Program />
-          )}
-          {activities && (
-            <Activities />
-          )}
+          {generalInfo && <GeneralInfo />}
+          {program && <Program />}
+          {activities && <Activities />}
         </div>
       </main>
       <footer>

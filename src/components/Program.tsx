@@ -30,6 +30,9 @@ const Program = () => {
       <p>
         <span>Administration of the Sacrament: </span>Members of the Priesthood
       </p>
+      {/* <p>
+        Fast and Testimony Meeting
+      </p> */}
       <p>
         <span>First Speaker: </span>Maylee Poll
       </p>

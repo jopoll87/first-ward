@@ -88,13 +88,27 @@ const Activities = () => {
       <h2 className='program'>Upcoming Activities</h2>
       <hr/>
       <div className='activity-buttons'>
-        <Button buttonName='Sunday School' handleClick={handleSundaySchool} />
-        <Button buttonName='Elders Quorum' handleClick={handleEldersQuorum} />
-        <Button buttonName='Relief Society' handleClick={handleReliefSociety} />
-        <Button buttonName='Aaronic Priesthood' handleClick={handleAaronicPriesthood} />
-        <Button buttonName='Young Women' handleClick={handleYoungWomen} />
-        <Button buttonName='Primary' handleClick={handlePrimary} />
-        <Button buttonName='Ward Mission' handleClick={handleWardMission} />
+        <div>
+          <Button buttonName='Sunday School' handleClick={handleSundaySchool} />
+        </div>
+        <div>
+          <Button buttonName='Elders Quorum' handleClick={handleEldersQuorum} />
+        </div>
+        <div>
+          <Button buttonName='Relief Society' handleClick={handleReliefSociety} />
+        </div>
+        <div>
+          <Button buttonName='Aaronic Priesthood' handleClick={handleAaronicPriesthood} />
+        </div>
+        <div>
+          <Button buttonName='Young Women' handleClick={handleYoungWomen} />
+        </div>
+        <div>
+          <Button buttonName='Primary' handleClick={handlePrimary} />
+        </div>
+        <div>
+          <Button buttonName='Ward Mission' handleClick={handleWardMission} />
+        </div>
       </div>
       <div>
         {sundaySchool && (

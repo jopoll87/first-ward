@@ -13,6 +13,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -22,37 +30,28 @@ a:hover {
   color: #535bf2;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
 .header {
   text-align: center;
-  width: 50%;
-  margin: auto;
-  padding-bottom: 2rem;
+  width: 90%;
+  margin: 2rem auto;
+  font-size: 1.15rem;
 }
 
 .header img {
-  width: 60%;
+  width: 80%;
   border-radius: 20px;
   box-shadow: 5px 5px 5px #1f363d;
 }
 
 main {
-  width: 60%;
-  margin: 5rem auto;
+  width: 80%;
+  margin: 3rem auto;
 }
 
 hr {
   color: #a499b3;
   width: 85%;
 }
-
 
 .info {
   margin: auto;
@@ -61,7 +60,7 @@ hr {
 
 .info h2 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .program {
@@ -74,7 +73,7 @@ hr {
 }
 
 .info p, ul{
-  font-size: 1.15rem;
+  font-size: 1rem;
 }
 
 .info span {
@@ -83,8 +82,8 @@ hr {
 
 .footer {
   text-align: center;
-  width: 40%;
-  margin: auto;
+  width: 75%;
+  margin: 0 auto;
   padding-top: 10rem;
 }
 
@@ -92,111 +91,164 @@ hr {
   font-weight: bold;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
 .main-buttons {
-  display: flex;
-  justify-content: space-evenly;
+  display: block;
+  align-items: center;
+  justify-content: center;
 }
 
 .main-buttons button{
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1.15em;
+  padding: 0.25rem 0.5rem;
+  font-size: 1rem;
   font-weight: bold;
   font-family: inherit;
   background-color: #8a4742;
   color: #f2efe4;
   cursor: pointer;
+  margin: 0.15rem auto;
 }
 
-.main-buttons button:hover {
-  background-color: #7c403c;
-}
+
 
 .activity-buttons {
-  display: flex;
-  justify-content: space-evenly;
-  padding-top: 1rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .activity-buttons button {
   border-radius: 5px;
   border: 1px solid transparent;
   padding: 0.4rem 1.0rem;
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   font-weight: bold;
   font-family: inherit;
   background-color: #1f363d;
   color: #f2efe4;
   cursor: pointer;
+  margin: 0.15rem 0.25rem;
 }
 
-.activity-buttons button:hover {
-  background-color: #294851;
-}
-
-.activities h3 {
-  text-align: center;
-  padding-top: 1rem;
-}
-
-.activities a {
-  color: #8a4742;
-}
-
-.activities a:hover {
-  color: #60322e;
-}
-
-.teaching-schedule {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.teaching-schedule button {
-  border-radius: 5px;
-  border: 1px solid transparent;
-  padding: 0.25rem 0.75rem;
-  font-size: .8rem;
-  font-weight: bold;
-  font-family: inherit;
-  background-color: #8a4742;
-  color: #f2efe4;
-  cursor: pointer;
-}
-
-.teaching-schedule button:hover {
-  background-color: #7c403c;
-}
-
-.teaching-schedule-table {
-  margin: auto;
-  padding-top: 2rem;
-}
-
-.teaching-schedule-table td {
-  padding: 0.25rem 2rem;
-}
-
-#general-info-close {
-  margin: 1.5rem 0 0 18.75rem;
-}
-
-
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+@media screen and (min-width: 825px) {
+  
+  .header {
+    text-align: center;
+    width: 75%;
+    margin: 2rem auto;
+    padding-bottom: 2rem;
   }
-  a:hover {
-    color: #747bff;
+
+  .header img {
+    width: 50%;
   }
-  button {
-    background-color: #f9f9f9;
+
+  .info h2 {
+    font-size: 2rem;
   }
-} */
+
+  .info p, ul {
+    font-size: 1.15rem;
+  }
+  
+  .footer {
+    width: 60%;
+  }
+  
+  h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+  }
+  
+  .main-buttons {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .main-buttons button{
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.5rem 0.75rem;
+    font-size: 1.05rem;
+    font-weight: bold;
+    font-family: inherit;
+    background-color: #8a4742;
+    color: #f2efe4;
+    cursor: pointer;
+    margin: none;
+  }
+
+  .main-buttons button:hover {
+    background-color: #7c403c;
+  }
+  
+  .activity-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+  }
+  
+  .activity-buttons button {
+    border-radius: 5px;
+    border: 1px solid transparent;
+    padding: 0.4rem 1.0rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+    font-family: inherit;
+    background-color: #1f363d;
+    color: #f2efe4;
+    cursor: pointer;
+  }
+
+  .activity-buttons button:hover {
+    background-color: #294851;
+  }
+  
+  .activities h3 {
+    text-align: center;
+    padding-top: 1rem;
+  }
+  
+  .activities a {
+    color: #8a4742;
+  }
+  
+  .activities a:hover {
+    color: #60322e;
+  }
+  
+  .teaching-schedule {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .teaching-schedule button {
+    border-radius: 5px;
+    border: 1px solid transparent;
+    padding: 0.25rem 0.75rem;
+    font-size: .8rem;
+    font-weight: bold;
+    font-family: inherit;
+    background-color: #8a4742;
+    color: #f2efe4;
+    cursor: pointer;
+  }
+  
+  .teaching-schedule button:hover {
+    background-color: #7c403c;
+  }
+  
+  .teaching-schedule-table {
+    margin: auto;
+    padding-top: 2rem;
+  }
+  
+  .teaching-schedule-table td {
+    padding: 0.25rem 2rem;
+  }
+  
+  #general-info-close {
+    margin: 1.5rem 0 0 18.75rem;
+  }
+}
+

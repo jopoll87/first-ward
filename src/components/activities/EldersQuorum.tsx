@@ -16,7 +16,7 @@ const EldersQuorum = () => {
       <p>Upcoming Activities: TBD</p>
       <p>Meets on the Second and Fourth Sundays of the month.</p>
       <p><span>Meeting Location: </span>Stage</p>
-      <p>Discussion Topics can be found at the <a href={generalConference}>October 2023 General Conference</a> page</p>
+      <p>Discussion Topics can be found at the <a href={generalConference} target='_blank' >October 2023 General Conference</a> page</p>
       <h3>Lesson Schedule</h3>
       <GeneralConference />
     </div>

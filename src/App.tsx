@@ -34,18 +34,24 @@ function App() {
       </header>
       <main>
         <div className='main-buttons'>
-          <Button
-            buttonName='General Info'
-            handleClick={handleGeneralInfo}
-          />
-          <Button
-            buttonName='Sacrament Meeting Program'
-            handleClick={handleProgram}
-          />
-          <Button
-            buttonName='Upcoming Activities'
-            handleClick={handleUpcomingActivities}
-          />
+          <div>
+            <Button
+              buttonName='General Info'
+              handleClick={handleGeneralInfo}
+            />
+          </div>
+          <div>
+            <Button
+              buttonName='Sacrament Meeting Program'
+              handleClick={handleProgram}
+            />
+          </div>
+          <div>
+            <Button
+              buttonName='Upcoming Activities'
+              handleClick={handleUpcomingActivities}
+            />
+          </div>
         </div>
         <div>
           {generalInfo && <GeneralInfo />}

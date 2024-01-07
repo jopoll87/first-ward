@@ -33,12 +33,12 @@ body {
 .header {
   text-align: center;
   width: 50%;
-  margin: auto;
+  margin: 10rem auto;
   padding-bottom: 2rem;
 }
 
-.header img {
-  width: 60%;
+.header-image img {
+  /* width: 60%; */
   border-radius: 20px;
   box-shadow: 5px 5px 5px #1f363d;
 }

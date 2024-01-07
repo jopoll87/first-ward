@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from './Button';
+import Button from './GeneralButton';
 import SundaySchool from './activities/SundaySchool';
 import EldersQuorum from './activities/EldersQuorum';
 import ReliefSociety from './activities/ReliefSociety';
@@ -16,7 +16,6 @@ const Activities = () => {
   const [youngWomen, setYoungWomen] = React.useState(false);
   const [primary, setPrimary] = React.useState(false);
   const [wardMission, setWardMission] = React.useState(false);
-  
 
   const handleSundaySchool = () => {
     setSundaySchool(!sundaySchool);
@@ -35,7 +34,7 @@ const Activities = () => {
     setYoungWomen(false);
     setPrimary(false);
     setWardMission(false);
-  }
+  };
   const handleReliefSociety = () => {
     setReliefSociety(!reliefSociety);
     setSundaySchool(false);
@@ -44,7 +43,7 @@ const Activities = () => {
     setYoungWomen(false);
     setPrimary(false);
     setWardMission(false);
-  }
+  };
   const handleAaronicPriesthood = () => {
     setAaronicPriesthood(!aaronicPriesthood);
     setSundaySchool(false);
@@ -53,7 +52,7 @@ const Activities = () => {
     setYoungWomen(false);
     setPrimary(false);
     setWardMission(false);
-  }
+  };
   const handleYoungWomen = () => {
     setYoungWomen(!youngWomen);
     setSundaySchool(false);
@@ -62,7 +61,7 @@ const Activities = () => {
     setAaronicPriesthood(false);
     setPrimary(false);
     setWardMission(false);
-  }
+  };
   const handlePrimary = () => {
     setPrimary(!primary);
     setSundaySchool(false);
@@ -71,7 +70,7 @@ const Activities = () => {
     setAaronicPriesthood(false);
     setYoungWomen(false);
     setWardMission(false);
-  }
+  };
   const handleWardMission = () => {
     setWardMission(!wardMission);
     setSundaySchool(false);
@@ -80,47 +79,36 @@ const Activities = () => {
     setAaronicPriesthood(false);
     setYoungWomen(false);
     setPrimary(false);
-  }
-  
+  };
+
   return (
     <div className='info'>
       <h4>South Weber First Ward</h4>
       <h2 className='program'>Upcoming Activities</h2>
-      <hr/>
+      <hr />
       <div className='activity-buttons'>
         <Button buttonName='Sunday School' handleClick={handleSundaySchool} />
         <Button buttonName='Elders Quorum' handleClick={handleEldersQuorum} />
         <Button buttonName='Relief Society' handleClick={handleReliefSociety} />
-        <Button buttonName='Aaronic Priesthood' handleClick={handleAaronicPriesthood} />
+        <Button
+          buttonName='Aaronic Priesthood'
+          handleClick={handleAaronicPriesthood}
+        />
         <Button buttonName='Young Women' handleClick={handleYoungWomen} />
         <Button buttonName='Primary' handleClick={handlePrimary} />
         <Button buttonName='Ward Mission' handleClick={handleWardMission} />
       </div>
       <div>
-        {sundaySchool && (
-          <SundaySchool />
-        )}
-        {eldersQuorum && (
-          <EldersQuorum />
-        )}
-        {reliefSociety && (
-          <ReliefSociety />
-        )}
-        {aaronicPriesthood && (
-          <AaronicPriesthood />
-        )}
-        {youngWomen && (
-          <YoungWomen />
-        )}
-        {primary && (
-          <Primary />
-        )}
-        {wardMission && (
-          <WardMission />
-        )}
+        {sundaySchool && <SundaySchool />}
+        {eldersQuorum && <EldersQuorum />}
+        {reliefSociety && <ReliefSociety />}
+        {aaronicPriesthood && <AaronicPriesthood />}
+        {youngWomen && <YoungWomen />}
+        {primary && <Primary />}
+        {wardMission && <WardMission />}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Activities
+export default Activities;

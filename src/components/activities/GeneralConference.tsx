@@ -8,7 +8,7 @@ const GeneralConference = () => {
       </tr>
       <tr>
         <td>November 12</td>
-        <td>President Nelson: Think Celestial</td>
+        <td>President Nelson: Think Celestial </td>
       </tr>
       <tr>
         <td>November 26</td>

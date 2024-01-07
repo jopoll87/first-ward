@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from './components/Header';
+import PageHeader from './components/PageHeader';
 import Footer from './components/Footer';
-import Button from './components/Button';
 import GeneralInfo from './components/GeneralInfo';
 import Program from './components/Program';
 import Activities from './components/Activities';
+import GeneralButton from './components/GeneralButton';
 
 function App() {
   const [generalInfo, setGeneralInfo] = React.useState(false);
@@ -29,20 +29,16 @@ function App() {
 
   return (
     <>
-      <header>
-        <Header />
-      </header>
+      <PageHeader />
+
       <main>
         <div className='main-buttons'>
-          <Button
-            buttonName='General Info'
-            handleClick={handleGeneralInfo}
-          />
-          <Button
+          <GeneralButton buttonName='General Info' handleClick={handleGeneralInfo} />
+          <GeneralButton
             buttonName='Sacrament Meeting Program'
             handleClick={handleProgram}
           />
-          <Button
+          <GeneralButton
             buttonName='Upcoming Activities'
             handleClick={handleUpcomingActivities}
           />

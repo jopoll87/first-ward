@@ -1,7 +1,11 @@
 
-const Button = ({buttonName, handleClick}) => {
+type Props = {
+  buttonName: string;
+  handleClick: () => void;
+}
+const Button = (props: Props) => {
   return (
-    <button onClick={handleClick}>{buttonName}</button>
+    <button onClick={props.handleClick}>{props.buttonName}</button>
   )
 }
 

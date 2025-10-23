@@ -4,16 +4,16 @@ const Program = () => {
       <h4>South Weber First Ward</h4>
       <h2 className='program'>Sacrament Meeting Program</h2>
       <hr />
-      <h4>Sunday, January 7, 2024</h4>
+      <h4>Sunday, October 26, 2025</h4>
       <br />
       <p>
-        <span>Welcome: </span>Allen Keetch
+        <span>Welcome: </span>
       </p>
       <p>
-        <span>Opening Hymn: </span>"Come, Let Us Anew" #217
+        <span>Opening Hymn: </span>
       </p>
       <p>
-        <span>Invocation: </span>Emmee Poll
+        <span>Invocation: </span>
       </p>
       <p>
         <span>Ward Business: </span>
@@ -25,7 +25,7 @@ const Program = () => {
         </ul>
       </p>
       <p>
-        <span>Sacrament Hymn: </span>"I Stand All Amazed" #193
+        <span>Sacrament Hymn: </span>
       </p>
       <p>
         <span>Administration of the Sacrament: </span>Members of the Priesthood
@@ -34,22 +34,22 @@ const Program = () => {
         Fast and Testimony Meeting
       </p> */}
       <p>
-        <span>First Speaker: </span>Maylee Poll
+        <span>First Speaker: </span>
       </p>
       <p>
-        <span>Second Speaker: </span>Meghan Flitton
+        <span>Second Speaker: </span>
       </p>
       <p>
-        <span>Intermediate Hymn: </span>"Press Forward, Saints" #81
+        <span>Intermediate Hymn: </span>
       </p>
       <p>
-        <span>Third Speaker: </span>Parker Flitton
+        <span>Third Speaker: </span>
       </p>
       <p>
-        <span>Closing Hymn: </span>"If You Could Hie to Kolob" #284
+        <span>Closing Hymn: </span>
       </p>
       <p>
-        <span>Benediction: </span>Dean Dayton
+        <span>Benediction: </span>
       </p>
     </div>
   );

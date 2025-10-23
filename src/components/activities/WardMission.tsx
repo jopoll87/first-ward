@@ -7,22 +7,25 @@ const WardMission = () => {
       </p>
       <ul>
         <li>
-          <span>Ward Mission Leader: </span>Spencer Groneman
+          <span>Ward Mission Leader: </span>Bruce Browning
         </li>
         <li>
-          <span>Assistant Ward Mission Leader: </span>Cisco Lopez
+          <span>Ward Missionary: </span>Colby Bentley
         </li>
         <li>
-          <span>Ward Missionary: </span>Carissa Clark
+          <span>Ward Missionary: </span>Mandie Bentley
         </li>
         <li>
-          <span>Ward Missionary: </span>Debby Poll
+          <span>Ward Missionary: </span>Diane Ford
         </li>
         <li>
           <span>Ward Missionary: </span>Reed Poll
         </li>
         <li>
-          <span>Ward Missionary: </span>Carolyn Rutherford
+          <span>Ward Missionary: </span>Kaylee McKay
+        </li>
+        <li>
+          <span>Ward Missionary: </span>Kelly Olson
         </li>
       </ul>
       <hr />

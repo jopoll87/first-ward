@@ -4,16 +4,16 @@ const Program = () => {
       <h4>South Weber First Ward</h4>
       <h2 className='program'>Sacrament Meeting Program</h2>
       <hr />
-      <h4>Sunday, October 26, 2025</h4>
+      <h4>Sunday, November 2, 2025</h4>
       <br />
       <p>
         <span>Welcome: </span>
       </p>
       <p>
-        <span>Opening Hymn: </span>
+        <span>Opening Hymn: #301 I am a Child of God</span>
       </p>
       <p>
-        <span>Invocation: </span>
+        <span>Invocation: Jodee Baltazar</span>
       </p>
       <p>
         <span>Ward Business: </span>
@@ -25,15 +25,15 @@ const Program = () => {
         </ul>
       </p>
       <p>
-        <span>Sacrament Hymn: </span>
+        <span>Sacrament Hymn: #170 God, Our Father, Hear us Pray</span>
       </p>
       <p>
         <span>Administration of the Sacrament: </span>Members of the Priesthood
       </p>
-      {/* <p>
-        Fast and Testimony Meeting
-      </p> */}
       <p>
+        Fast and Testimony Meeting
+      </p>
+      {/* <p>
         <span>First Speaker: </span>
       </p>
       <p>
@@ -44,12 +44,12 @@ const Program = () => {
       </p>
       <p>
         <span>Third Speaker: </span>
+      </p> */}
+      <p>
+        <span>Closing Hymn: #1028 This Little Light of Mine</span>
       </p>
       <p>
-        <span>Closing Hymn: </span>
-      </p>
-      <p>
-        <span>Benediction: </span>
+        <span>Benediction: Duncan MacDougall</span>
       </p>
     </div>
   );

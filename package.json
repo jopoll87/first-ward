@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://jopoll87.github.io/first-ward/",
+  "homepage": "https://southweberfirstward.org",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",

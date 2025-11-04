@@ -72,7 +72,8 @@ hr {
   margin-bottom: 0;
 }
 
-.info p, ul{
+.info p,
+ul {
   font-size: 1rem;
 }
 
@@ -97,11 +98,11 @@ hr {
   justify-content: center;
 }
 
-.main-buttons button{
+.main-buttons button {
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.25rem 0.5rem;
-  font-size: 1rem;
+  padding: 0.75rem 0.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
   font-family: inherit;
   background-color: #8a4742;
@@ -110,7 +111,9 @@ hr {
   margin: 0.15rem auto;
 }
 
-
+.activities {
+  padding-top: 20px;
+}
 
 .activity-buttons {
   align-items: center;
@@ -120,8 +123,8 @@ hr {
 .activity-buttons button {
   border-radius: 5px;
   border: 1px solid transparent;
-  padding: 0.4rem 1.0rem;
-  font-size: 0.5rem;
+  padding: 0.4rem 1rem;
+  font-size: 1.1rem;
   font-weight: bold;
   font-family: inherit;
   background-color: #1f363d;
@@ -130,8 +133,7 @@ hr {
   margin: 0.15rem 0.25rem;
 }
 
-@media screen and (min-width: 825px) {
-  
+@media screen and (min-width: 820px) {
   .header {
     text-align: center;
     width: 75%;
@@ -140,36 +142,38 @@ hr {
   }
 
   .header img {
-    width: 50%;
+    width: 75%;
   }
 
   .info h2 {
     font-size: 2rem;
   }
 
-  .info p, ul {
+  .info p,
+  ul {
     font-size: 1.15rem;
   }
-  
+
   .footer {
     width: 60%;
   }
-  
+
   h1 {
     font-size: 3.2em;
     line-height: 1.1;
   }
-  
+
   .main-buttons {
     display: flex;
     justify-content: space-evenly;
   }
-  
-  .main-buttons button{
+
+  .main-buttons button {
+    height: 50px;
     border-radius: 8px;
     border: 1px solid transparent;
-    padding: 0.5rem 0.75rem;
-    font-size: 1.05rem;
+    padding: 0.75rem 0.75rem;
+    font-size: 1.25rem;
     font-weight: bold;
     font-family: inherit;
     background-color: #8a4742;
@@ -181,18 +185,18 @@ hr {
   .main-buttons button:hover {
     background-color: #7c403c;
   }
-  
+
   .activity-buttons {
     display: flex;
     justify-content: space-evenly;
     padding-top: 1rem;
   }
-  
+
   .activity-buttons button {
+    height: 50px;
     border-radius: 5px;
     border: 1px solid transparent;
-    padding: 0.4rem 1.0rem;
-    font-size: 0.7rem;
+    padding: 0.4rem 1rem;
     font-weight: bold;
     font-family: inherit;
     background-color: #1f363d;
@@ -203,52 +207,84 @@ hr {
   .activity-buttons button:hover {
     background-color: #294851;
   }
-  
+
   .activities h3 {
     text-align: center;
     padding-top: 1rem;
   }
-  
+
   .activities a {
     color: #8a4742;
   }
-  
+
   .activities a:hover {
     color: #60322e;
   }
-  
+
   .teaching-schedule {
     display: flex;
     justify-content: space-evenly;
   }
-  
+
   .teaching-schedule button {
     border-radius: 5px;
     border: 1px solid transparent;
     padding: 0.25rem 0.75rem;
-    font-size: .8rem;
     font-weight: bold;
     font-family: inherit;
     background-color: #8a4742;
     color: #f2efe4;
     cursor: pointer;
   }
-  
+
   .teaching-schedule button:hover {
     background-color: #7c403c;
   }
-  
+
   .teaching-schedule-table {
     margin: auto;
     padding-top: 2rem;
   }
-  
+
   .teaching-schedule-table td {
     padding: 0.25rem 2rem;
   }
-  
+
   #general-info-close {
     margin: 1.5rem 0 0 18.75rem;
   }
 }
 
+@media screen and (max-width: 819px) {
+  .header img {
+    width: 100%;
+  }
+
+  .main-buttons {
+    display: block !important;
+  }
+
+  .main-buttons button {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+.activity-buttons {
+  display: flex;
+  flex-direction: column;   /* Stack buttons vertically */
+  align-items: center;      /* Center horizontally */
+  gap: 5px;                /* Space between buttons */
+  width: 100%;              /* Full width of parent */
+  margin-top: 20px;         /* Space below heading */
+}
+
+.activity-buttons > div {
+  width: 80%;               /* Each button wrapper takes 80% of parent width */
+}
+
+.activity-buttons button {
+  width: 100%;              /* Button fills its wrapper */
+  padding: 12px;            /* Nice padding */
+}
+
+}

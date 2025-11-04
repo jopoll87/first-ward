@@ -1,13 +1,13 @@
-// import React from 'react';
-// import Button from '../Button';
-// import SSTeachingSchedule from './SSTeachingSchedule';
+import React from 'react';
+import Button from '../Button';
+import SSTeachingSchedule from './SSTeachingSchedule';
 
 const SundaySchool = () => {
-  // const [teachingSchedule, setTeachingSchedule] = React.useState(false);
+  const [teachingSchedule, setTeachingSchedule] = React.useState(false);
 
-  // const handleTeachingSchedule = () => {
-  //   setTeachingSchedule(!teachingSchedule);
-  // }
+  const handleTeachingSchedule = () => {
+    setTeachingSchedule(!teachingSchedule);
+  }
 
   const comeFollowMe = 'https://www.churchofjesuschrist.org/study/come-follow-me?lang=eng';
   
@@ -24,7 +24,7 @@ const SundaySchool = () => {
             <p>Meets on the First and Third Sundays of the month</p>
             <p>Discussion Topics can be found at the <a href={comeFollowMe} target='_blank'>Come Follow Me</a> webpage</p>
             <p>Class Time: 2:10pm - 3:00pm</p>
-            {/* <p>Sunday School Classrooms:</p>
+            <p>Sunday School Classrooms:</p>
             <ul>
               <li><span>Course 12: </span>Classroom east of the library</li>
               <li><span>Course 13: </span> Classroom west of the 8th Ward's Bishop's office</li>
@@ -39,7 +39,7 @@ const SundaySchool = () => {
               {teachingSchedule && (
                 <SSTeachingSchedule />
               )}
-            </div> */}
+            </div>
           </div>
   )
 }

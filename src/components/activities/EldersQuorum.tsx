@@ -1,26 +1,47 @@
 import GeneralConference from './GeneralConference';
 
 const EldersQuorum = () => {
-  const generalConference = 'https://www.churchofjesuschrist.org/study/general-conference/2025/10?lang=eng';
+  const generalConference =
+    'https://www.churchofjesuschrist.org/study/general-conference/2025/10?lang=eng';
 
   return (
     <div className='activities'>
       <h2>Elders Quorum</h2>
-      <p><span>Presidency: </span></p>
+      <p>
+        <span>Presidency: </span>
+      </p>
       <ul>
-        <li><span>President: </span>Kenny Carson</li>
-        <li><span>1st Counselor: </span>Chase Poll</li>
-        <li><span>2nd Counselor: </span>AJ Colby</li>
-        <li><span>Secretary: </span>Steve Decker</li>
+        <li>
+          <span>President: </span>Kenny Carson
+        </li>
+        <li>
+          <span>1st Counselor: </span>Chase Poll
+        </li>
+        <li>
+          <span>2nd Counselor: </span>AJ Colby
+        </li>
+        <li>
+          <span>Secretary: </span>Steve Decker
+        </li>
       </ul>
       <p>Upcoming Activities: TBD</p>
       <p>Meets on the Second and Fourth Sundays of the month.</p>
-      <p><span>Meeting Location: </span>Stage</p>
-      <p>Discussion Topics can be found at the <a href={generalConference} target='_blank' >October 2025 General Conference</a> page</p>
+      <p>
+        <span>Meeting Location: </span>Stage
+      </p>
+      <p>
+        Discussion Topics can be found at the{' '}
+        <a href={generalConference} target='_blank'>
+          October 2025 General Conference
+        </a>{' '}
+        page
+      </p>
       <h3>Lesson Schedule</h3>
-      <GeneralConference />
+      <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+        <GeneralConference />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default EldersQuorum
+export default EldersQuorum;

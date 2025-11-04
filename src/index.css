@@ -1,3 +1,7 @@
+
+/* ===========================
+   Global Styles
+=========================== */
 :root {
   font-family: 'Fira Code', monospace;
   line-height: 1.5;
@@ -15,8 +19,6 @@
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -24,12 +26,16 @@ body {
 a {
   font-weight: 500;
   color: #646cff;
-  text-decoration: inherit;
+  text-decoration: none;
 }
+
 a:hover {
   color: #535bf2;
 }
 
+/* ===========================
+   Header
+=========================== */
 .header {
   text-align: center;
   width: 90%;
@@ -43,6 +49,9 @@ a:hover {
   box-shadow: 5px 5px 5px #1f363d;
 }
 
+/* ===========================
+   Main Content
+=========================== */
 main {
   width: 80%;
   margin: 3rem auto;
@@ -63,10 +72,6 @@ hr {
   font-size: 1.5rem;
 }
 
-.program {
-  margin-top: 0;
-}
-
 .info h4 {
   text-align: center;
   margin-bottom: 0;
@@ -81,61 +86,88 @@ ul {
   font-weight: bold;
 }
 
+/* ===========================
+   Footer
+=========================== */
 .footer {
   text-align: center;
-  width: 85%;
+  width: 75%;
   margin: 0 auto;
-  padding-top: 2rem;
+  padding-top: 10rem;
 }
 
 .footer span {
   font-weight: bold;
 }
 
+/* ===========================
+   Common Button Styles
+=========================== */
+button {
+  border-radius: 5px;
+  border: 1px solid transparent;
+  font-weight: bold;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* ===========================
+   Main Buttons
+=========================== */
 .main-buttons {
   display: block;
-  align-items: center;
-  justify-content: center;
 }
 
 .main-buttons button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.75rem 0.5rem;
-  font-size: 1.3rem;
-  font-weight: bold;
-  font-family: inherit;
   background-color: #8a4742;
   color: #f2efe4;
-  cursor: pointer;
+  padding: 0.75rem 0.5rem;
+  font-size: 1.3rem;
   margin: 0.15rem auto;
 }
 
+.main-buttons button:hover {
+  background-color: #7c403c;
+}
+
+/* ===========================
+   Activity Buttons
+=========================== */
 .activities {
   padding-top: 20px;
 }
 
 .activity-buttons {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  gap: 5px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.activity-buttons > div {
+  width: 80%;
 }
 
 .activity-buttons button {
-  border-radius: 5px;
-  border: 1px solid transparent;
-  padding: 0.4rem 1rem;
-  font-size: 1.1rem;
-  font-weight: bold;
-  font-family: inherit;
+  width: 100%;
   background-color: #1f363d;
   color: #f2efe4;
-  cursor: pointer;
-  margin: 0.15rem 0.25rem;
+  padding: 0.4rem 1rem;
+  font-size: 1.1rem;
 }
+
+.activity-buttons button:hover {
+  background-color: #294851;
+}
+
+/* ===========================
+   Responsive Styles
+=========================== */
 
 @media screen and (min-width: 820px) {
   .header {
-    text-align: center;
     width: 75%;
     margin: 2rem auto;
     padding-bottom: 2rem;
@@ -154,11 +186,16 @@ ul {
     font-size: 1.15rem;
   }
 
+  .footer {
+    width: 60%;
+  }
+
   h1 {
     font-size: 3.2em;
     line-height: 1.1;
   }
 
+  /* Main buttons in row */
   .main-buttons {
     display: flex;
     justify-content: space-evenly;
@@ -166,42 +203,28 @@ ul {
 
   .main-buttons button {
     height: 50px;
-    border-radius: 8px;
-    border: 1px solid transparent;
     padding: 0.75rem 0.75rem;
     font-size: 1.25rem;
-    font-weight: bold;
-    font-family: inherit;
-    background-color: #8a4742;
-    color: #f2efe4;
-    cursor: pointer;
-    margin: none;
   }
 
-  .main-buttons button:hover {
-    background-color: #7c403c;
-  }
-
+  /* Activity buttons in row */
   .activity-buttons {
-    display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
     padding-top: 1rem;
   }
 
-  .activity-buttons button {
-    height: 50px;
-    border-radius: 5px;
-    border: 1px solid transparent;
-    padding: 0.4rem 1rem;
-    font-weight: bold;
-    font-family: inherit;
-    background-color: #1f363d;
-    color: #f2efe4;
-    cursor: pointer;
+  .activity-buttons > div {
+    flex: 1 1 150px;
+    max-width: 200px;
+    display: flex;
   }
 
-  .activity-buttons button:hover {
-    background-color: #294851;
+  .activity-buttons button {
+    flex: 1;
+    height: 50px;
   }
 
   .activities h3 {
@@ -217,20 +240,16 @@ ul {
     color: #60322e;
   }
 
+  /* Teaching schedule */
   .teaching-schedule {
     display: flex;
     justify-content: space-evenly;
   }
 
   .teaching-schedule button {
-    border-radius: 5px;
-    border: 1px solid transparent;
-    padding: 0.25rem 0.75rem;
-    font-weight: bold;
-    font-family: inherit;
     background-color: #8a4742;
     color: #f2efe4;
-    cursor: pointer;
+    padding: 0.25rem 0.75rem;
   }
 
   .teaching-schedule button:hover {
@@ -256,35 +275,20 @@ ul {
     width: 100%;
   }
 
-  .footer {
-    width: 90%;
-  }
-
-  .main-buttons {
-    display: block !important;
-  }
-
   .main-buttons button {
     width: 100%;
     margin-bottom: 0.5rem;
   }
-
-.activity-buttons {
-  display: flex;
-  flex-direction: column;   /* Stack buttons vertically */
-  align-items: center;      /* Center horizontally */
-  gap: 5px;                /* Space between buttons */
-  width: 100%;              /* Full width of parent */
-  margin-top: 20px;         /* Space below heading */
 }
 
-.activity-buttons > div {
-  width: 80%;               /* Each button wrapper takes 80% of parent width */
+@media screen and (min-width: 1500px) {
+  .header img {
+    width: 50%;
+  }
 }
 
-.activity-buttons button {
-  width: 100%;              /* Button fills its wrapper */
-  padding: 12px;            /* Nice padding */
-}
-
+@media screen and (min-width: 2500px) {
+  .header img {
+    width: 35%;
+  }
 }

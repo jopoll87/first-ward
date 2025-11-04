@@ -1,4 +1,4 @@
-// import GeneralConference from './GeneralConference';
+import GeneralConference from './GeneralConference';
 
 const EldersQuorum = () => {
   const generalConference = 'https://www.churchofjesuschrist.org/study/general-conference/2025/10?lang=eng';
@@ -18,7 +18,7 @@ const EldersQuorum = () => {
       <p><span>Meeting Location: </span>Stage</p>
       <p>Discussion Topics can be found at the <a href={generalConference} target='_blank' >October 2025 General Conference</a> page</p>
       <h3>Lesson Schedule</h3>
-      {/* <GeneralConference /> */}
+      <GeneralConference />
     </div>
   )
 }

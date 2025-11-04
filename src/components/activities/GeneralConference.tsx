@@ -7,52 +7,52 @@ const GeneralConference = () => {
         <th>Conference Talk</th>
       </tr>
       <tr>
-        <td>November 12</td>
-        <td>President Nelson: Think Celestial </td>
+        <td>November 9</td>
+        <td>Elder Soares: Adorned. with the Virtue of Temperance </td>
       </tr>
       <tr>
-        <td>November 26</td>
-        <td>Elder Phillips: God Knows and Loves You</td>
+        <td>November 23</td>
+        <td>Elder Brown: The Eternal Gift of Testimony</td>
       </tr>
       <tr>
-        <td>December 10</td>
-        <td>No Lesson: Special Stake Conference</td>
+        <td>December 14</td>
+        <td>No Lesson: Stake Conference</td>
       </tr>
       <tr>
-        <td>December 24</td>
-        <td>No Lesson: Sacrament Only - Christmas</td>
+        <td>December 28</td>
+        <td>Elder Cuvelier: The Name by Which Ye Are Called</td>
       </tr>
       <tr>
-        <td>January 14</td>
-        <td>Sister Freeman: Walking in Covenant Relationship with Christ</td>
+        <td>January 11</td>
+        <td>Elder Stevenson: Blessed Are the Peacemakers</td>
       </tr>
       <tr>
-        <td>January 28</td>
-        <td>President Eyring: Our Constant Companion</td>
+        <td>January 25</td>
+        <td>Elder Anderson: The Atoning Love of Jesus Christ <strong>and</strong> Elder Johnson: Be Reconciled to God</td>
       </tr>
       <tr>
-        <td>February 11</td>
-        <td>Elder Christofferson: The Sealing Power</td>
+        <td>February 8</td>
+        <td>Elder Gong: No One Sits Alone <strong>and</strong> Elder Cook: The Lord Is Hastening His Work</td>
       </tr>
       <tr>
-        <td>February 25</td>
-        <td>Elder Arden: Love Thy Neighbor</td>
+        <td>February 22</td>
+        <td>Elder Johnson: The Power of Ministering to the One <strong>and</strong> ElderJackson: Remembering the Sheep</td>
       </tr>
       <tr>
-        <td>March 10</td>
-        <td>Sister Runia: Seeing God's Family Through the Overview Lense</td>
+        <td>March 8</td>
+        <td>President Oaks: The Family-Centered Gospel of Jesus Christ <strong>and</strong> Elder Rasband: The Family Proclamation - Words from God</td>
       </tr>
       <tr>
-        <td>March 24</td>
-        <td>Elder Uchtdorf: The Prodigal and the Road that Leads Home</td>
+        <td>March 22</td>
+        <td>Elder Amos: The Good News Recipe <strong>and</strong> President Eyring: Proved and Strengthened in Christ</td>
       </tr>
       <tr>
-        <td>April 14</td>
-        <td>Elder Esplin: The Savior's Healing Power Upon the Isles of the Sea</td>
+        <td>April 12</td>
+        <td>Elder Kearon: Jesus Christ and Your New Beginning</td>
       </tr>
       <tr>
-        <td>April 28</td>
-        <td>Elder Rasband: How Great Will Be Your Joy</td>
+        <td>April 26</td>
+        <td>Elder Uchtdorf: Do Your Part with All Your Heart</td>
       </tr>
     </table>
   )

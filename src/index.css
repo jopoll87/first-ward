@@ -83,9 +83,9 @@ ul {
 
 .footer {
   text-align: center;
-  width: 75%;
+  width: 85%;
   margin: 0 auto;
-  padding-top: 10rem;
+  padding-top: 2rem;
 }
 
 .footer span {
@@ -152,10 +152,6 @@ ul {
   .info p,
   ul {
     font-size: 1.15rem;
-  }
-
-  .footer {
-    width: 60%;
   }
 
   h1 {
@@ -258,6 +254,10 @@ ul {
 @media screen and (max-width: 819px) {
   .header img {
     width: 100%;
+  }
+
+  .footer {
+    width: 90%;
   }
 
   .main-buttons {

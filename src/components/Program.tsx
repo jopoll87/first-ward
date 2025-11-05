@@ -15,15 +15,15 @@ const Program = () => {
       <p>
         <span>Invocation: Jodee Baltazar</span>
       </p>
-      <p>
-        <span>Ward Business: </span>
+      <div>
+        <p><strong>Ward Business: </strong></p>
         <ul>
           <li>
             Additional ward news and calendar items can be found under the{' '}
             <span>Upcoming Activities</span> tab.
           </li>
         </ul>
-      </p>
+      </div>
       <p>
         <span>Sacrament Hymn: #170 God, Our Father, Hear us Pray</span>
       </p>

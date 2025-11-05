@@ -1,9 +1,6 @@
 import GeneralConference from './GeneralConference';
 
 const EldersQuorum = () => {
-  const generalConference =
-    'https://www.churchofjesuschrist.org/study/general-conference/2025/10?lang=eng';
-
   return (
     <div className='activities'>
       <h2>Elders Quorum</h2>
@@ -30,11 +27,7 @@ const EldersQuorum = () => {
         <span>Meeting Location: </span>Stage
       </p>
       <p>
-        Discussion Topics can be found at the{' '}
-        <a href={generalConference} target='_blank'>
-          October 2025 General Conference
-        </a>{' '}
-        page
+        Please note that some weeks have 2 talks assigned for discussion.
       </p>
       <h3>Lesson Schedule</h3>
       <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>

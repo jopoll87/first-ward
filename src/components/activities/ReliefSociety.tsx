@@ -1,8 +1,6 @@
 import GeneralConference from './GeneralConference'
 
-const ReliefSociety = () => {
-  const generalConference = 'https://www.churchofjesuschrist.org/study/general-conference/2025/10?lang=eng';
-  
+const ReliefSociety = () => {  
   return (
     <div className='activities'>
       <h2>Relief Society</h2>
@@ -16,7 +14,7 @@ const ReliefSociety = () => {
       <p>Upcoming Activities: TBD</p>
       <p>Meets on the Second and Fourth Sundays of the month.</p>
       <p><span>Meeting Location: </span>Relief Society Room</p>
-      <p>Discussion Topics can be found at the <a href={generalConference} target='_blank' >October 2025 General Conference</a> page</p>
+      <p>Please note that some weeks have 2 talks assigned for discussion</p>
       <h3>Lesson Schedule</h3>
       <GeneralConference />
     </div>

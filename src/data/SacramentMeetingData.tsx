@@ -1,26 +1,26 @@
 export type MeetingData = {
-  id: number,
-  date: string,
-  presiding: string,
-  conducting: string,
-  openingHymnNumber: number,
-  openingHymn: string,
-  sacramentHymnNumber: number,
-  sacramentHymn: string,
-  intermediateHymnNumber: number,
-  intermediateHymn: string,
-  closingHymnNumber: number,
-  closingHymn:  string,
-  invocation: string,
-  benediction: string,
-  speaker1: string,
-  speaker2: string,
-  speaker3: string,
-  speaker4: string,
-  speaker5: string,
-  isFast: boolean,
-  isStreaming: boolean,
-}
+  id: number;
+  date: string;
+  presiding: string;
+  conducting: string;
+  openingHymnNumber: number;
+  openingHymn: string;
+  sacramentHymnNumber: number;
+  sacramentHymn: string;
+  intermediateHymnNumber: number;
+  intermediateHymn: string;
+  closingHymnNumber: number;
+  closingHymn: string;
+  invocation: string;
+  benediction: string;
+  speaker1: string;
+  speaker2: string;
+  speaker3: string;
+  speaker4: string;
+  speaker5: string;
+  isFast: boolean;
+  isStreaming: boolean;
+};
 
 export const PROGRAMS = [
   {
@@ -43,7 +43,7 @@ export const PROGRAMS = [
     speaker3: '',
     speaker4: '',
     speaker5: '',
-    isFast: false,
+    isFast: true,
     isStreaming: false,
   },
-]
+];

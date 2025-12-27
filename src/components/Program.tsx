@@ -10,7 +10,17 @@ const Program = () => {
       {PROGRAMS.map((program: MeetingData) => (
         <div key={program.id}>
           <h3>{program.date}</h3>
-          {program.isStreaming && <h3>Watch Live Stream on <a href='https://www.youtube.com/@southweberfirstward5349' target='_blank'><Icon name='youtube' color='red' size='big'/></a></h3>}
+          {program.isStreaming && (
+            <h3>
+              Watch Live Stream on{' '}
+              <a
+                href='https://www.youtube.com/@southweberfirstward5349'
+                target='_blank'
+              >
+                <Icon name='youtube' color='red' size='big' />
+              </a>
+            </h3>
+          )}
           <br />
           <p>
             <span>Presiding: {program.presiding}</span>
@@ -54,16 +64,23 @@ const Program = () => {
                 <span>First Speaker: {program.speaker1}</span>
               </p>
               <p>
-                <span>Second Speaker: {program.speaker2}</span>
-              </p>
-              <p>
                 <span>
-                  Intermediate Hymn: {program.intermediateHymnNumber === 0 ? '' : `${program.intermediateHymnNumber}, ${program.intermediateHymn}`}
+                  Intermediate Hymn:{' '}
+                  {program.intermediateHymnNumber === 0
+                    ? ''
+                    : `${program.intermediateHymnNumber}, ${program.intermediateHymn}`}
                 </span>
               </p>
               <p>
-                <span>Third Speaker: {program.speaker3}</span>
+                <span>Second Speaker: {program.speaker2}</span>
               </p>
+
+              {program.speaker3 !== '' ? (
+                <p>
+                  <span>Third Speaker: {program.speaker3}</span>
+                </p>
+              ) : undefined}
+
               {program.speaker4 !== '' ? (
                 <p>
                   <span>Fourth Speaker: {program.speaker4}</span>
@@ -76,11 +93,14 @@ const Program = () => {
               ) : undefined}
             </div>
           )}
-          <div style={{marginTop: '10px'}}>
+          <div style={{ marginTop: '10px' }}>
             <p>
               <span>
-                Closing Hymn: {program.closingHymnNumber}, {program.closingHymn}
-              </span>
+                  Closing Hymn:{' '}
+                  {program.closingHymnNumber === 0
+                    ? ''
+                    : `${program.closingHymnNumber}, ${program.closingHymn}`}
+                </span>
             </p>
             <p>
               <span>Benediction: {program.benediction}</span>

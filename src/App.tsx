@@ -27,15 +27,12 @@ function App() {
     setProgram(false);
   };
 
-  const wardChristmasPartyLink = 'https://docs.google.com/forms/d/e/1FAIpQLScEpidB17gg3w1OW_IZqslGR8EWGSlPEs6V-QIBtGfzzT-EMQ/viewform?usp=sharing&ouid=111659746328980918343';
-
   return (
     <>
       <header>
         <Header />
       </header>
       <main>
-        <h2 className='christmas'>Upload Family Photo <a href={wardChristmasPartyLink} target='_blank'>HERE</a></h2>
         <div className='main-buttons'>
           <div>
             <Button

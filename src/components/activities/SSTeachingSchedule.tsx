@@ -19,8 +19,8 @@ const SSTeachingSchedule = () => {
             </Table.Row>
             <Table.Row>
               <Table.HeaderCell>Date</Table.HeaderCell>
-              <Table.HeaderCell>Relief Society Room</Table.HeaderCell>
-              <Table.HeaderCell>Young Women's Room</Table.HeaderCell>
+              <Table.HeaderCell>Class #1</Table.HeaderCell>
+              <Table.HeaderCell>Class #2</Table.HeaderCell>
               <Table.HeaderCell>Link</Table.HeaderCell>
             </Table.Row>
           </Table.Header>
@@ -29,8 +29,8 @@ const SSTeachingSchedule = () => {
               (week: AdultSundaySchoolTeachingType) => (
                 <Table.Row key={week.id}>
                   <Table.Cell>{week.date}</Table.Cell>
-                  <Table.Cell>{week.teacher1}</Table.Cell>
-                  <Table.Cell>{week.teacher2}</Table.Cell>
+                  <Table.Cell>{week.teacher1} - {week.teacher1Classroom}</Table.Cell>
+                  <Table.Cell>{week.teacher2} - {week.teacher2Classroom}</Table.Cell>
                   <Table.Cell>
                     <a href={week.lessonLink} target='_blank'>
                       <Icon name='external alternate' color='blue' />

@@ -14,13 +14,13 @@ const GeneralInfo = () => {
             </ul>
       <p>
         The South Weber First Ward Meets on Sundays from{' '}
-        <span>1:00pm to 3:00pm.</span>
+        <span>8:30am to 10:30am.</span>
       </p>
       <p>
-        Sacrament Meeting is from <span>1:00pm to 2:00pm.</span>
+        Sacrament Meeting is from <span>8:30am to 9:30am.</span>
       </p>
       <p>
-        Second Hour Meetings: <span>2:10pm to 3:00pm.</span>
+        Second Hour Meetings: <span>9:40am to 10:30am.</span>
       </p>
       <ul>
         <li>Every Sunday: Primary</li>

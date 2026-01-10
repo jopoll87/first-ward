@@ -15,6 +15,35 @@ export type YouthSundaySchoolTeachingType = {
   classroom: string;
 }
 
+export type PresidencyType = {
+  id: number;
+  calling: string;
+  name: string;
+};
+
+export const SUNDAYSCHOOLPRESIDENCY = [
+  {
+    id: 1,
+    calling: 'President',
+    name: 'Jimmy MacDougall',
+  },
+  {
+    id: 2,
+    calling: '1st Counselor',
+    name: 'Brian Hall',
+  },
+  {
+    id: 3,
+    calling: '2nd Counselor',
+    name: 'Adam Jacobson',
+  },
+  {
+    id: 4,
+    calling: 'Secretary',
+    name: 'Kyle Shupe',
+  }
+]
+
 export const ADULTTEACHINGSCHEDULE = [
   {
     id: 1,
@@ -95,7 +124,7 @@ export const YOUTHTEACHING = [
     id: 1,
     class: 'Course 12',
     teachers: 'Cami & Matt Miller',
-    classroom: 'East of Library',
+    classroom: 'Room #7',
   },
   {
     id: 2,
@@ -107,7 +136,7 @@ export const YOUTHTEACHING = [
     id: 3,
     class: 'Course 14 & 15',
     teachers: 'Grace & Jaden Pacheco',
-    classroom: 'South Side of Stage',
+    classroom: 'Room #13',
   },
   {
     id: 4,

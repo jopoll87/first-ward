@@ -30,7 +30,7 @@ const WardMission = () => {
       </ul>
       <hr />
       <p><span>Fulltime Missionaries:</span></p>
-      <p><span>Contact Info: </span></p>
+      <p><span>Contact Info: (801) 651-8961</span></p>
     </div>
   );
 };

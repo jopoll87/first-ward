@@ -4,7 +4,7 @@ import {
   AdultSundaySchoolTeachingType,
   YOUTHTEACHING,
   YouthSundaySchoolTeachingType,
-} from '../../data/SundaySchoolTeachingScheduleData';
+} from '../../data/SundaySchoolData';
 
 const SSTeachingSchedule = () => {
   return (

@@ -1,4 +1,4 @@
-import chapel from '/chapel.jpg'
+import chapel from '../assets/chapel.jpg';
 
 const Header = () => {
   return (

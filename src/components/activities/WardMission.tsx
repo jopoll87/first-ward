@@ -29,7 +29,7 @@ const WardMission = () => {
         </li>
       </ul>
       <hr />
-      <p><span>Fulltime Missionaries:</span></p>
+      <p><span>Fulltime Missionaries: Elder Riddell & Elder Wilmoth </span></p>
       <p><span>Contact Info: (801) 651-8961</span></p>
     </div>
   );

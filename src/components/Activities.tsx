@@ -7,6 +7,7 @@ import AaronicPriesthood from './activities/AaronicPriesthood';
 import YoungWomen from './activities/YoungWomen';
 import Primary from './activities/Primary';
 import WardMission from './activities/WardMission';
+import dance from '../assets/VDayDance.jpg';
 
 const Activities = () => {
   const [sundaySchool, setSundaySchool] = React.useState(false);
@@ -87,6 +88,9 @@ const Activities = () => {
       <h3>South Weber First Ward</h3>
       <h2 className='program'>Upcoming Activities</h2>
       <hr/>
+      <div className='header'>
+        <img src={dance} alt='Youth dance' />
+      </div>
       <div className='activity-buttons'>
         <div>
           <Button buttonName='Sunday School' handleClick={handleSundaySchool} />

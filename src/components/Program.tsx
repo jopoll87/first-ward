@@ -64,12 +64,12 @@ const Program = () => {
                 <span>First Speaker: {program.speaker1}</span>
               </p>
               <p>
-                <span>
-                  Intermediate Hymn:{' '}
-                  {program.intermediateHymnNumber === 0
-                    ? ''
-                    : `${program.intermediateHymnNumber}, ${program.intermediateHymn}`}
-                </span>
+                {program.intermediateHymnNumber !== 0 && (
+                  <span>
+                    Intermediate Hymn: {program.intermediateHymnNumber},{' '}
+                    {program.intermediateHymn}
+                  </span>
+                )}
               </p>
               <p>
                 <span>Second Speaker: {program.speaker2}</span>
@@ -96,11 +96,11 @@ const Program = () => {
           <div style={{ marginTop: '10px' }}>
             <p>
               <span>
-                  Closing Hymn:{' '}
-                  {program.closingHymnNumber === 0
-                    ? ''
-                    : `${program.closingHymnNumber}, ${program.closingHymn}`}
-                </span>
+                Closing Hymn:{' '}
+                {program.closingHymnNumber === 0
+                  ? ''
+                  : `${program.closingHymnNumber}, ${program.closingHymn}`}
+              </span>
             </p>
             <p>
               <span>Benediction: {program.benediction}</span>

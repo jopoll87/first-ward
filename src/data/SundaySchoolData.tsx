@@ -47,75 +47,75 @@ export const SUNDAYSCHOOLPRESIDENCY = [
 export const ADULTTEACHINGSCHEDULE = [
   {
     id: 1,
-    date: 'January 4',
+    date: 'May 3',
     teacher1: 'Mike Poll',
     teacher1Classroom: 'Relief Society',
     teacher2: 'Jenne Talbot',
     teacher2Classroom: 'Young Women',
-    lessonLink: 'https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-old-testament-2026/01?lang=eng'
+    lessonLink: 'https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-old-testament-2026/18?lang=eng'
   },
   {
     id: 2,
-    date: 'January 18',
+    date: 'May 17',
     teacher1: 'Mike Poll',
     teacher1Classroom: 'Relief Society',
     teacher2: 'Jenne Talbot',
     teacher2Classroom: 'Young Women',
-    lessonLink: 'https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-old-testament-2026/03?lang=eng'
+    lessonLink: 'https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-old-testament-2026/20?lang=eng'
   },
   {
     id: 3,
-    date: 'February 1',
+    date: 'June 7',
     teacher1: 'Jenne Talbot',
     teacher1Classroom: 'Relief Society',
     teacher2: 'Mike Poll',
     teacher2Classroom: 'Young Women',
-    lessonLink: 'https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-old-testament-2026/05?lang=eng'
+    lessonLink: 'https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-old-testament-2026/23?lang=eng'
   },
   {
     id: 4,
-    date: 'February 15',
+    date: 'June 21',
     teacher1: 'Jenne Talbot',
     teacher1Classroom: 'Relief Society',
     teacher2: 'Mike Poll',
     teacher2Classroom: 'Young Women',
-    lessonLink: 'https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-old-testament-2026/07?lang=eng'
+    lessonLink: 'https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-old-testament-2026/25?lang=eng'
   },
   {
     id: 5,
-    date: 'March 1',
+    date: 'July 5',
     teacher1: 'Mike Poll',
     teacher1Classroom: 'Relief Society',
     teacher2: 'Jenne Talbot',
     teacher2Classroom: 'Young Women',
-    lessonLink: 'https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-old-testament-2026/09?lang=eng'
+    lessonLink: 'https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-old-testament-2026/27?lang=eng'
   },
   {
     id: 6,
-    date: 'March  15',
+    date: 'July 19',
     teacher1: 'Mike Poll',
     teacher1Classroom: 'Relief Society',
     teacher2: 'Jenne Talbot',
     teacher2Classroom: 'Young Women',
-    lessonLink: 'https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-old-testament-2026/11?lang=eng'
+    lessonLink: 'https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-old-testament-2026/29?lang=eng'
   },
   {
     id: 7,
-    date: 'April 5',
+    date: 'August 2',
     teacher1: 'Jenne Talbot',
     teacher1Classroom: 'Relief Society',
     teacher2: 'Mike Poll',
     teacher2Classroom: 'Young Women',
-    lessonLink: 'https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-old-testament-2026/14?lang=eng'
+    lessonLink: 'https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-old-testament-2026/31?lang=eng'
   },
   {
     id: 8,
-    date: 'April 19',
+    date: 'August 16',
     teacher1: 'Jenne Talbot',
     teacher1Classroom: 'Relief Society',
     teacher2: 'Mike Poll',
     teacher2Classroom: 'Young Women',
-    lessonLink: 'https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-old-testament-2026/16?lang=eng'
+    lessonLink: 'https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-old-testament-2026/33?lang=eng'
   },
 ]
 

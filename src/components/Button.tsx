@@ -2,10 +2,21 @@
 type Props = {
   buttonName: string;
   handleClick: () => void;
-}
-const Button = (props: Props) => {
+  isActive?: boolean;
+  ariaControls?: string;
+};
+
+const Button = ({ buttonName, handleClick, isActive, ariaControls }: Props) => {
   return (
-    <button onClick={props.handleClick}>{props.buttonName}</button>
+    <button
+      onClick={handleClick}
+      className={isActive ? 'active' : ''}
+      role='tab'
+      aria-selected={isActive ?? false}
+      aria-controls={ariaControls}
+    >
+      {buttonName}
+    </button>
   )
 }
 

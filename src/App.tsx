@@ -6,26 +6,13 @@ import GeneralInfo from './components/GeneralInfo';
 import Program from './components/Program';
 import Activities from './components/Activities';
 
-function App() {
-  const [generalInfo, setGeneralInfo] = React.useState(false);
-  const [program, setProgram] = React.useState(false);
-  const [activities, setActivities] = React.useState(false);
+type Section = 'generalInfo' | 'program' | 'activities';
 
-  const handleGeneralInfo = () => {
-    setGeneralInfo(!generalInfo);
-    setProgram(false);
-    setActivities(false);
-  };
-  const handleProgram = () => {
-    setProgram(!program);
-    setGeneralInfo(false);
-    setActivities(false);
-  };
-  const handleUpcomingActivities = () => {
-    setActivities(!activities);
-    setGeneralInfo(false);
-    setProgram(false);
-  };
+function App() {
+  const [activeSection, setActiveSection] = React.useState<Section | null>(null);
+
+  const handleSection = (name: Section) =>
+    setActiveSection(prev => (prev === name ? null : name));
 
   return (
     <>
@@ -33,30 +20,36 @@ function App() {
         <Header />
       </header>
       <main>
-        <div className='main-buttons'>
+        <div className='main-buttons' role='tablist'>
           <div>
             <Button
               buttonName='General Info'
-              handleClick={handleGeneralInfo}
+              handleClick={() => handleSection('generalInfo')}
+              isActive={activeSection === 'generalInfo'}
+              ariaControls='main-section-content'
             />
           </div>
           <div>
             <Button
               buttonName='Sacrament Meeting Program'
-              handleClick={handleProgram}
+              handleClick={() => handleSection('program')}
+              isActive={activeSection === 'program'}
+              ariaControls='main-section-content'
             />
           </div>
           <div>
             <Button
               buttonName='Upcoming Activities'
-              handleClick={handleUpcomingActivities}
+              handleClick={() => handleSection('activities')}
+              isActive={activeSection === 'activities'}
+              ariaControls='main-section-content'
             />
           </div>
         </div>
-        <div>
-          {generalInfo && <GeneralInfo />}
-          {program && <Program />}
-          {activities && <Activities />}
+        <div id='main-section-content' role='tabpanel' tabIndex={0}>
+          {activeSection === 'generalInfo' && <GeneralInfo />}
+          {activeSection === 'program' && <Program />}
+          {activeSection === 'activities' && <Activities />}
         </div>
       </main>
       <footer>

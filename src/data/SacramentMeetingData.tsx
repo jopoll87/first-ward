@@ -13,11 +13,11 @@ export type MeetingData = {
   closingHymn: string;
   invocation: string;
   benediction: string;
-  speaker1: string;
-  speaker2: string;
-  speaker3: string;
-  speaker4: string;
-  speaker5: string;
+  speaker1?: string;
+  speaker2?: string;
+  speaker3?: string;
+  speaker4?: string;
+  speaker5?: string;
   isFast: boolean;
   isStreaming: boolean;
 };
@@ -41,9 +41,7 @@ export const PROGRAMS = [
     speaker1: 'Finn MacDougall',
     speaker2: 'Elder Nate Dickson',
     speaker3: 'Natalie Browning',
-    speaker4: '',
-    speaker5: '',
     isFast: false,
-    isStreaming: true,
+    isStreaming: false,
   },
 ];

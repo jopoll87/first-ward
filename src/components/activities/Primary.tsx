@@ -1,3 +1,4 @@
+import InfoRow from '../InfoRow';
 import { Table } from 'semantic-ui-react';
 import { PRIMARYCLASSES, PrimaryClassType } from '../../data/PrimaryData';
 
@@ -6,34 +7,21 @@ const Primary = () => {
     <>
       <div className='activities'>
         <h2>Primary</h2>
-        <p>
-          <span>Presidency: </span>
-        </p>
-        <ul>
-          <li>
-            <span>President: </span>Karson Hall
-          </li>
-          <li>
-            <span>1st Counselor: </span>Ellie Jeppsen
-          </li>
-          <li>
-            <span>2nd Counselor: </span>Gina Colby
-          </li>
-          <li>
-            <span>Secretary: </span>Jodee Baltazar
-          </li>
-        </ul>
-        <p>
-          <span>Upcoming Activities: </span>TBD
-        </p>
+
+        <h3 className='info-section-header'>Presidency</h3>
+        <InfoRow label='President' value='Karson Hall' />
+        <InfoRow label='1st Counselor' value='Ellie Jeppsen' />
+        <InfoRow label='2nd Counselor' value='Gina Colby' />
+        <InfoRow label='Secretary' value='Jodee Baltazar' />
+
+        <h3 className='info-section-header'>Upcoming Activities</h3>
+        <InfoRow label='Activities' value='TBD' />
       </div>
-      <div className='general-conference'>
-        <Table celled basic='very' style={{ marginTop: '80px' }}>
+      <div className='general-conference mt-large' style={{ overflowX: 'auto' }}>
+        <Table celled basic='very'>
           <Table.Header>
             <Table.Row>
-              <Table.HeaderCell colSpan={3}>
-                Primary Classes
-              </Table.HeaderCell>
+              <Table.HeaderCell colSpan={3}>Primary Classes</Table.HeaderCell>
             </Table.Row>
             <Table.Row>
               <Table.HeaderCell>Class</Table.HeaderCell>

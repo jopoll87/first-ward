@@ -1,111 +1,107 @@
 import { Icon } from 'semantic-ui-react';
 import { MeetingData, PROGRAMS } from '../data/SacramentMeetingData';
 
+type ProgramRowProps = { label: string; value: string };
+
+const ProgramRow = ({ label, value }: ProgramRowProps) => (
+  <div className='program-row'>
+    <span className='program-label'>{label}</span>
+    <span className='program-value'>{value}</span>
+  </div>
+);
+
 const Program = () => {
   return (
-    <div className='info'>
-      <h3>South Weber First Ward</h3>
-      <h2 className='program'>Sacrament Meeting Program</h2>
-      <hr />
+    <div className='program-wrapper'>
       {PROGRAMS.map((program: MeetingData) => (
-        <div key={program.id}>
-          <h3>{program.date}</h3>
-          {program.isStreaming && (
-            <h3>
-              Watch Live Stream on{' '}
-              <a
-                href='https://www.youtube.com/@southweberfirstward5349'
-                target='_blank'
-              >
-                <Icon name='youtube' color='red' size='big' />
-              </a>
-            </h3>
-          )}
-          <br />
-          <p>
-            <span>Presiding: {program.presiding}</span>
-          </p>
-          <p>
-            <span>Welcome: {program.conducting}</span>
-          </p>
-          <p>
-            <span>
-              Opening Hymn: {program.openingHymnNumber}, {program.openingHymn}
-            </span>
-          </p>
-          <p>
-            <span>Invocation: {program.invocation}</span>
-          </p>
-          <div>
-            <p>
-              <strong>Ward Business: {program.conducting}</strong>
-            </p>
-            <ul>
-              <li>
-                Additional ward news and calendar items can be found under the{' '}
-                <span>Upcoming Activities</span> tab.
-              </li>
-            </ul>
+        <div key={program.id} className='program-card'>
+
+          <div className='program-header'>
+            <p className='program-ward-name'>South Weber First Ward</p>
+            <h2 className='program-title'>Sacrament Meeting</h2>
+            <p className='program-date'>{program.date}</p>
+            <p className='program-time'>8:30 AM – 9:30 AM</p>
+            {program.isStreaming && (
+              <div className='program-stream'>
+                <a
+                  href='https://www.youtube.com/@southweberfirstward5349'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  aria-label='Watch Live Stream on YouTube'
+                >
+                  <Icon name='youtube' color='red' size='large' />
+                  <span>Watch Live Stream</span>
+                </a>
+              </div>
+            )}
           </div>
-          <p>
-            <span>
-              Sacrament Hymn: {program.sacramentHymnNumber},{' '}
-              {program.sacramentHymn}
-            </span>
+
+          <div className='program-section'>
+            <ProgramRow label='Presiding' value={program.presiding} />
+            <ProgramRow label='Conducting' value={program.conducting} />
+            <ProgramRow
+              label='Opening Hymn'
+              value={`#${program.openingHymnNumber} — ${program.openingHymn}`}
+            />
+            <ProgramRow label='Invocation' value={program.invocation} />
+            <ProgramRow label='Ward Business' value={program.conducting} />
+          </div>
+          <p className='program-note'>
+            Additional ward news and calendar items can be found under the{' '}
+            <strong>Upcoming Activities</strong> tab.
           </p>
-          <p>
-            <span>Administration of the Sacrament: </span>Members of the
-            Priesthood
-          </p>
-          {program.isFast && <p>Fast and Testimony Meeting</p>}
-          {!program.isFast && (
-            <div>
-              <p>
-                <span>First Speaker: {program.speaker1}</span>
-              </p>
-              <p>
+
+          <div className='program-section-divider'>✦ Sacrament ✦</div>
+
+          <div className='program-section'>
+            <ProgramRow
+              label='Sacrament Hymn'
+              value={`#${program.sacramentHymnNumber} — ${program.sacramentHymn}`}
+            />
+            <ProgramRow
+              label='Administration'
+              value='Members of the Priesthood'
+            />
+          </div>
+
+          {program.isFast ? (
+            <>
+              <div className='program-section-divider'>✦ Testimonies ✦</div>
+              <div className='program-fast'>
+                <p>Fast and Testimony Meeting</p>
+              </div>
+            </>
+          ) : (
+            <>
+              <div className='program-section-divider'>✦ Speakers ✦</div>
+              <div className='program-section'>
+                {program.speaker1 && <ProgramRow label='Speaker' value={program.speaker1} />}
+                {program.speaker2 && <ProgramRow label='Speaker' value={program.speaker2} />}
                 {program.intermediateHymnNumber !== 0 && (
-                  <span>
-                    Intermediate Hymn: {program.intermediateHymnNumber},{' '}
-                    {program.intermediateHymn}
-                  </span>
+                  <ProgramRow
+                    label='Intermediate Hymn'
+                    value={`#${program.intermediateHymnNumber} — ${program.intermediateHymn}`}
+                  />
                 )}
-              </p>
-              <p>
-                <span>Second Speaker: {program.speaker2}</span>
-              </p>
-
-              {program.speaker3 !== '' ? (
-                <p>
-                  <span>Third Speaker: {program.speaker3}</span>
-                </p>
-              ) : undefined}
-
-              {program.speaker4 !== '' ? (
-                <p>
-                  <span>Fourth Speaker: {program.speaker4}</span>
-                </p>
-              ) : undefined}
-              {program.speaker5 !== '' ? (
-                <p>
-                  <span>Fifth Speaker: {program.speaker5}</span>
-                </p>
-              ) : undefined}
-            </div>
+                {program.speaker3 && <ProgramRow label='Speaker' value={program.speaker3} />}
+                {program.speaker4 && <ProgramRow label='Speaker' value={program.speaker4} />}
+                {program.speaker5 && <ProgramRow label='Speaker' value={program.speaker5} />}
+              </div>
+            </>
           )}
-          <div style={{ marginTop: '10px' }}>
-            <p>
-              <span>
-                Closing Hymn:{' '}
-                {program.closingHymnNumber === 0
-                  ? ''
-                  : `${program.closingHymnNumber}, ${program.closingHymn}`}
-              </span>
-            </p>
-            <p>
-              <span>Benediction: {program.benediction}</span>
-            </p>
+
+          <div className='program-section-divider'>✦ Closing ✦</div>
+
+          <div className='program-section'>
+            {program.closingHymnNumber !== 0 && (
+              <ProgramRow
+                label='Closing Hymn'
+                value={`#${program.closingHymnNumber} — ${program.closingHymn}`}
+              />
+            )}
+            <ProgramRow label='Benediction' value={program.benediction} />
           </div>
+
         </div>
       ))}
     </div>

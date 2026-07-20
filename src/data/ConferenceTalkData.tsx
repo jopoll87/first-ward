@@ -3,7 +3,7 @@ export type ConferenceTalkType = {
   date: string;
   name: string;
   title: string;
-  url: string;
+  url?: string;
 }
 
 export const TALKS = [

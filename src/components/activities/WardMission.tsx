@@ -1,36 +1,22 @@
+import InfoRow from '../InfoRow';
+
 const WardMission = () => {
   return (
     <div className='activities'>
       <h2>Ward Mission</h2>
-      <p>
-        <span>Missionaries: </span>
-      </p>
-      <ul>
-        <li>
-          <span>Ward Mission Leader: </span>Bruce Browning
-        </li>
-        <li>
-          <span>Ward Missionary: </span>Colby Bentley
-        </li>
-        <li>
-          <span>Ward Missionary: </span>Mandie Bentley
-        </li>
-        <li>
-          <span>Ward Missionary: </span>Diane Ford
-        </li>
-        <li>
-          <span>Ward Missionary: </span>Reed Poll
-        </li>
-        <li>
-          <span>Ward Missionary: </span>Kaylee McKay
-        </li>
-        <li>
-          <span>Ward Missionary: </span>Kelly Olson
-        </li>
-      </ul>
-      <hr />
-      <p><span>Fulltime Missionaries: Elder Riddell & Elder Buck </span></p>
-      <p><span>Contact Info: (801) 651-8961</span></p>
+
+      <h3 className='info-section-header'>Local Missionaries</h3>
+      <InfoRow label='Mission Leader' value='Bruce Browning' />
+      <InfoRow label='Ward Missionary' value='Colby Bentley' />
+      <InfoRow label='Ward Missionary' value='Mandie Bentley' />
+      <InfoRow label='Ward Missionary' value='Diane Ford' />
+      <InfoRow label='Ward Missionary' value='Reed Poll' />
+      <InfoRow label='Ward Missionary' value='Kaylee McKay' />
+      <InfoRow label='Ward Missionary' value='Kelly Olson' />
+
+      <h3 className='info-section-header'>Fulltime Missionaries</h3>
+      <InfoRow label='Missionaries' value='Elder Riddell & Elder Buck' />
+      <InfoRow label='Contact' value='(801) 651-8961' />
     </div>
   );
 };

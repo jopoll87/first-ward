@@ -1,36 +1,25 @@
+import InfoRow from '../InfoRow';
 import GeneralConference from './GeneralConference';
 
 const EldersQuorum = () => {
   return (
     <div className='activities'>
       <h2>Elders Quorum</h2>
-      <p>
-        <span>Presidency: </span>
-      </p>
-      <ul>
-        <li>
-          <span>President: </span>Kenny Carson
-        </li>
-        <li>
-          <span>1st Counselor: </span>Chase Poll
-        </li>
-        <li>
-          <span>2nd Counselor: </span>AJ Colby
-        </li>
-        <li>
-          <span>Secretary: </span>Steve Decker
-        </li>
-      </ul>
-      <p>Upcoming Activities: TBD</p>
-      <p>Meets on the Second and Fourth Sundays of the month.</p>
-      <p>
-        <span>Meeting Location: </span>Stage
-      </p>
-      <p>
-        Please note that some weeks have 2 talks assigned for discussion.
-      </p>
-      <h3>Lesson Schedule</h3>
-      <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+
+      <h3 className='info-section-header'>Presidency</h3>
+      <InfoRow label='President' value='Kenny Carson' />
+      <InfoRow label='1st Counselor' value='Chase Poll' />
+      <InfoRow label='2nd Counselor' value='AJ Colby' />
+      <InfoRow label='Secretary' value='Steve Decker' />
+
+      <h3 className='info-section-header'>Meeting Info</h3>
+      <InfoRow label='Schedule' value='2nd & 4th Sundays' />
+      <InfoRow label='Location' value='Stage' />
+
+      <p className='activity-note'>Please note that some weeks have 2 talks assigned for discussion.</p>
+
+      <h3 className='info-section-header'>Lesson Schedule</h3>
+      <div className='conference-center'>
         <GeneralConference />
       </div>
     </div>

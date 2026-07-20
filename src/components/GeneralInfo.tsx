@@ -1,36 +1,28 @@
+import InfoRow from './InfoRow';
 
 const GeneralInfo = () => {
-  
   return (
     <div className='info'>
       <h2>1st Ward General Info</h2>
-      <p><span>Bishopric: </span></p>
-            <ul>
-              <li><span>Bishop: </span>Jared Miller</li>
-              <li><span>1st Counselor: </span>Jason Poll</li>
-              <li><span>2nd Counselor: </span>Abraham McKay</li>
-              <li><span>Executive Secretary: </span>Brodie Nielson</li>
-              <li><span>Ward Clerk: </span>Matt Gustafson</li>
-            </ul>
-      <p>
-        The South Weber First Ward Meets on Sundays from{' '}
-        <span>8:30am to 10:30am.</span>
-      </p>
-      <p>
-        Sacrament Meeting is from <span>8:30am to 9:30am.</span>
-      </p>
-      <p>
-        Second Hour Meetings: <span>9:40am to 10:30am.</span>
-      </p>
-      <ul>
-        <li>Every Sunday: Primary</li>
-        <li>First and Third Sundays: Sunday School</li>
-        <li>
-          Second and Fourth Sundays: Priesthood, Relief Society, and Youth
-          classes
-        </li>
-        <li>Fifth Sundays: Special Meetings</li>
-      </ul>
+
+      <h3 className='info-section-header'>Bishopric</h3>
+      <InfoRow label='Bishop' value='Jared Miller' />
+      <InfoRow label='1st Counselor' value='Jason Poll' />
+      <InfoRow label='2nd Counselor' value='Abraham McKay' />
+      <InfoRow label='Executive Secretary' value='Brodie Nielson' />
+      <InfoRow label='Ward Clerk' value='Matt Gustafson' />
+
+      <div className='info-divider'>✦ Meeting Schedule ✦</div>
+
+      <h3 className='info-section-header'>Sunday Meetings</h3>
+      <InfoRow label='Sacrament Meeting' value='8:30 AM – 9:30 AM' />
+      <InfoRow label='Second Hour' value='9:40 AM – 10:30 AM' />
+
+      <h3 className='info-section-header'>Second Hour Classes</h3>
+      <InfoRow label='Every Sunday' value='Primary' />
+      <InfoRow label='1st & 3rd Sundays' value='Sunday School' />
+      <InfoRow label='2nd & 4th Sundays' value='Priesthood, Relief Society & Youth' />
+      <InfoRow label='5th Sundays' value='Special Meetings' />
     </div>
   );
 };

@@ -42,15 +42,17 @@ const SSTeachingSchedule = () => {
                 <Table.Cell>{week.teacher1} — {week.teacher1Classroom}</Table.Cell>
                 <Table.Cell>{week.teacher2} — {week.teacher2Classroom}</Table.Cell>
                 <Table.Cell>
-                  <a
-                    href={week.lessonLink}
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    className='schedule-link'
-                    aria-label={`Lesson for ${week.date}`}
-                  >
-                    <Icon name='external alternate' />
-                  </a>
+                  {week.lessonLink && (
+                    <a
+                      href={week.lessonLink}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      className='schedule-link'
+                      aria-label={`Lesson for ${week.date}`}
+                    >
+                      <Icon name='external alternate' />
+                    </a>
+                  )}
                 </Table.Cell>
               </Table.Row>
             ))}

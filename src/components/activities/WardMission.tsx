@@ -15,7 +15,7 @@ const WardMission = () => {
       <InfoRow label='Ward Missionary' value='Kelly Olson' />
 
       <h3 className='info-section-header'>Fulltime Missionaries</h3>
-      <InfoRow label='Missionaries' value='Elder Riddell & Elder Buck' />
+      <InfoRow label='Missionaries' value='Elder Misseldine & Elder Jeppsen' />
       <InfoRow label='Contact' value='(801) 651-8961' />
     </div>
   );

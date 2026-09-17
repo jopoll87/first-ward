@@ -47,76 +47,121 @@ export const SUNDAYSCHOOLPRESIDENCY = [
 export const ADULTTEACHINGSCHEDULE = [
   {
     id: 1,
-    date: 'May 3',
+    date: 'September 6',
     teacher1: 'Mike Poll',
     teacher1Classroom: 'Relief Society',
     teacher2: 'Jenne Talbot',
     teacher2Classroom: 'Young Women',
-    lessonLink: 'https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-old-testament-2026/18?lang=eng'
+    lessonLink: 'https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-old-testament-2026/36?lang=eng'
   },
   {
     id: 2,
-    date: 'May 17',
-    teacher1: 'Mike Poll',
+    date: 'September 13',
+    teacher1: 'Terry Bybee',
     teacher1Classroom: 'Relief Society',
     teacher2: 'Jenne Talbot',
     teacher2Classroom: 'Young Women',
-    lessonLink: 'https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-old-testament-2026/20?lang=eng'
+    lessonLink: 'https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-old-testament-2026/37?lang=eng'
   },
   {
     id: 3,
-    date: 'June 7',
-    teacher1: 'Jenne Talbot',
+    date: 'September 20',
+    teacher1: 'Mike Poll',
     teacher1Classroom: 'Relief Society',
-    teacher2: 'Mike Poll',
+    teacher2: 'Jenne Talbot',
     teacher2Classroom: 'Young Women',
-    lessonLink: 'https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-old-testament-2026/23?lang=eng'
+    lessonLink: 'https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-old-testament-2026/38?lang=eng'
   },
   {
     id: 4,
-    date: 'June 21',
-    teacher1: 'Jenne Talbot',
+    date: 'September 27',
+    teacher1: 'Terry Bybee',
     teacher1Classroom: 'Relief Society',
-    teacher2: 'Mike Poll',
+    teacher2: 'Jenne Talbot',
     teacher2Classroom: 'Young Women',
-    lessonLink: 'https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-old-testament-2026/25?lang=eng'
+    lessonLink: 'https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-old-testament-2026/39?lang=eng'
   },
   {
     id: 5,
-    date: 'July 5',
-    teacher1: 'Mike Poll',
-    teacher1Classroom: 'Relief Society',
-    teacher2: 'Jenne Talbot',
-    teacher2Classroom: 'Young Women',
-    lessonLink: 'https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-old-testament-2026/27?lang=eng'
+    date: 'October 4',
+    teacher1: 'No Lessson',
+    teacher1Classroom: 'General Conference',
+    teacher2: 'No Lesson',
+    teacher2Classroom: 'General Conference',
+    lessonLink: ''
   },
-  {
-    id: 6,
-    date: 'July 19',
-    teacher1: 'Mike Poll',
-    teacher1Classroom: 'Relief Society',
-    teacher2: 'Jenne Talbot',
-    teacher2Classroom: 'Young Women',
-    lessonLink: 'https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-old-testament-2026/29?lang=eng'
-  },
-  {
-    id: 7,
-    date: 'August 2',
-    teacher1: 'Jenne Talbot',
-    teacher1Classroom: 'Relief Society',
-    teacher2: 'Mike Poll',
-    teacher2Classroom: 'Young Women',
-    lessonLink: 'https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-old-testament-2026/31?lang=eng'
-  },
-  {
-    id: 8,
-    date: 'August 16',
-    teacher1: 'Jenne Talbot',
-    teacher1Classroom: 'Relief Society',
-    teacher2: 'Mike Poll',
-    teacher2Classroom: 'Young Women',
-    lessonLink: 'https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-old-testament-2026/33?lang=eng'
-  },
+  // {
+  //   id: 6,
+  //   date: 'October 11',
+  //   teacher1: '',
+  //   teacher1Classroom: 'Relief Society',
+  //   teacher2: 'Jenne Talbot',
+  //   teacher2Classroom: 'Young Women',
+  //   lessonLink: 'https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-old-testament-2026/41?lang=eng'
+  // },
+  // {
+  //   id: 7,
+  //   date: 'October 18',
+  //   teacher1: '',
+  //   teacher1Classroom: 'Relief Society',
+  //   teacher2: 'Jenne Talbot',
+  //   teacher2Classroom: 'Young Women',
+  //   lessonLink: 'https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-old-testament-2026/42?lang=eng'
+  // },
+  // {
+  //   id: 8,
+  //   date: 'October 25',
+  //   teacher1: '',
+  //   teacher1Classroom: 'Relief Society',
+  //   teacher2: 'Jenne Talbot',
+  //   teacher2Classroom: 'Young Women',
+  //   lessonLink: 'https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-old-testament-2026/43?lang=eng'
+  // },
+  // {
+  //   id: 9,
+  //   date: 'November 1',
+  //   teacher1: '',
+  //   teacher1Classroom: 'Relief Society',
+  //   teacher2: 'Jenne Talbot',
+  //   teacher2Classroom: 'Young Women',
+  //   lessonLink: 'https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-old-testament-2026/44?lang=eng'
+  // },
+  // {
+  //   id: 10,
+  //   date: 'November 8',
+  //   teacher1: '',
+  //   teacher1Classroom: 'Relief Society',
+  //   teacher2: 'Jenne Talbot',
+  //   teacher2Classroom: 'Young Women',
+  //   lessonLink: 'https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-old-testament-2026/44?lang=eng'
+  // },
+  // {
+  //   id: 11,
+  //   date: 'November 15',
+  //   teacher1: '',
+  //   teacher1Classroom: 'Relief Society',
+  //   teacher2: 'Jenne Talbot',
+  //   teacher2Classroom: 'Young Women',
+  //   lessonLink: 'https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-old-testament-2026/46?lang=eng'
+  // },
+  // {
+  //   id: 12,
+  //   date: 'November 22',
+  //   teacher1: '',
+  //   teacher1Classroom: 'Relief Society',
+  //   teacher2: 'Jenne Talbot',
+  //   teacher2Classroom: 'Young Women',
+  //   lessonLink: 'https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-old-testament-2026/47?lang=eng'
+  // },
+  // {
+  //   id: 13,
+  //   date: 'November 29',
+  //   teacher1: '',
+  //   teacher1Classroom: 'Relief Society',
+  //   teacher2: 'Jenne Talbot',
+  //   teacher2Classroom: 'Young Women',
+  //   lessonLink: 'https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-old-testament-2026/48?lang=eng'
+  // },
 ]
 
 export const YOUTHTEACHING = [

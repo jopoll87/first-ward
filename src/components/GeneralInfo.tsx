@@ -16,12 +16,12 @@ const GeneralInfo = () => {
 
       <h3 className='info-section-header'>Sunday Meetings</h3>
       <InfoRow label='Sacrament Meeting' value='8:30 AM – 9:30 AM' />
-      <InfoRow label='Second Hour' value='9:40 AM – 10:30 AM' />
+      <InfoRow label='Second Hour' value='9:35 AM – 10:30 AM' />
 
       <h3 className='info-section-header'>Second Hour Classes</h3>
       <InfoRow label='Every Sunday' value='Primary' />
-      <InfoRow label='1st & 3rd Sundays' value='Sunday School' />
-      <InfoRow label='2nd & 4th Sundays' value='Priesthood, Relief Society & Youth' />
+      <InfoRow label='9:35 AM – 10:00 AM' value='Sunday School' />
+      <InfoRow label='10:05 AM – 10:30 AM' value='Priesthood, Relief Society & Youth' />
       <InfoRow label='5th Sundays' value='Special Meetings' />
     </div>
   );
